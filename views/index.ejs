@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src='https://meet.jit.si/external_api.js'></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <title>Hospital virtual visit</title>
+</head>
+<body>
+    <h1 id="header">Welcome to the Hospital virtual visit!</h1>
+    <div id="roomSelector">
+
+        <h3>Please select your room below</h3>
+
+        <label for="room">Room Number:</label>
+
+        <select name="room" id="room">
+            <option value="empty">---</option>
+            <option value="100">100</option>
+            <option value="101">101</option>
+            <option value="102">102</option>
+            <option value="103">103</option>
+        </select>
+
+        <button onclick="chooseRoom()">Confirm</button>
+
+    </div>
+
+    <div id="meet">
+
+        <div id="meet100">
+
+        </div>
+
+        <div id="meet101">
+    
+        </div>
+
+        <div id="meet102">
+    
+        </div>
+
+        <div id="meet103">
+    
+        </div>
+
+        <button onclick="goBack()">Go Back</button>
+
+    </div>
+    
+</body>
+</html>
