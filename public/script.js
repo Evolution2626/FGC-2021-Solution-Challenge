@@ -10,6 +10,12 @@ function chooseRoom(){
         roomNumber = selectedValue;
         document.getElementById("roomSelector").style.display = "none";
         document.getElementById("meet").style.display = "block";
+        do {
+            var passcode = prompt("What is the password for this room?");
+            if (passcode !== "room#" + roomNumber) {
+                alert("The password seems to be incorrect! Please Retry");
+            }
+        } while (passcode !== "room#" + roomNumber);
         startMeet(roomNumber);
     }
     
