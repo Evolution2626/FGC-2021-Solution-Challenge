@@ -29,3 +29,33 @@ body{
     color: var(--main-light);
 }
 
+button {
+  text-align: center;
+  background-color: greenyellow;
+  color: black;
+  font-size: 100px;
+  width: 500px;
+  height: 250px;
+  border-radius: 12px;
+  border: none;
+}
+
+label {
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+}
+
+#goBack {
+  width: 1000px;
+  background-color: crimson;
+  color: white;
+}
+
+select {
+  width: 100px;
+  height: 50px;
+  background-color: greenyellow;
+  color: black;
+  font-size: 24px;
+}

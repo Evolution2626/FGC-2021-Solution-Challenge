@@ -2,22 +2,23 @@ var roomNumber;
 var api;
 
 function chooseRoom(){
-    var list = document.getElementById("room");
+    /* var list = document.getElementById("room");
     var selectedValue = list.options[list.selectedIndex].value;
         if (selectedValue == "empty"){
         alert("Please select a card type");
-    }else {
+    }else {*/
+        selectedValue = prompt("What is your room number?");
         roomNumber = selectedValue;
         document.getElementById("roomSelector").style.display = "none";
         document.getElementById("meet").style.display = "block";
-        do {
+        /* do {
             var passcode = prompt("What is the password for this room?");
             if (passcode !== "room#" + roomNumber) {
                 alert("The password seems to be incorrect! Please Retry");
             }
-        } while (passcode !== "room#" + roomNumber);
+        } while (passcode !== "room#" + roomNumber); */
         startMeet(roomNumber);
-    }
+    //}
     
 }
 
